@@ -161,7 +161,7 @@ class FontFamilyTool {
         const updatedFont = anchoredElementSelectedFont.slice(anchoredElementSelectedFont.indexOf('"') + 1, anchoredElementSelectedFont.indexOf('"', anchoredElementSelectedFont.indexOf('"') + 1));
         anchoredElementSelectedFont = updatedFont;
       }
-      else if (anchoredElementSelectedFont.indexOf(',')) {
+      else if (anchoredElementSelectedFont.indexOf(',') !== -1) {
         anchoredElementSelectedFont = anchoredElementSelectedFont.slice(0, anchoredElementSelectedFont.indexOf(','));
       }
       this.replaceFontSizeInWrapper(anchoredElementSelectedFont);
