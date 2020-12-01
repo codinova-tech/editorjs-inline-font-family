@@ -1,6 +1,3 @@
-// import $ from '../dom';
-// import { InlineTool, SanitizerConfig } from '../../../types';
-
 require('./index.css').toString();
 
 const fontFamiliesType = ['Arial', 'Arial Black', 'Arial Narrow', 'Arial Rounded MT Bold',
