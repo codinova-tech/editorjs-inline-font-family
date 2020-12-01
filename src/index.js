@@ -79,6 +79,7 @@ class FontFamilyTool {
       const option = document.createElement('div');
       option.setAttribute('value', value);
       option.setAttribute('style', `font-family:${value}`);
+      option.setAttribute('title', value);
       option.classList.add('selection-list-option');
       if (document.getElementById(this.fontFamilyDropDown).innerHTML === value || this.selectedFontFamily === value) {
         option.classList.add('selection-list-option-active');
