@@ -120,7 +120,7 @@ class FontFamilyTool {
   }
 
    toggleDropDown = ($event) => {
-    if ((($event.target).id === this.fontFamilyDropDown || ($event.target.parentNode.id === this.fontFamilyBtn))) {
+    if ((($event.target).id === this.fontFamilyDropDown || ($event.target.parentNode.id === this.fontFamilyBtn) || (($event.target).id === this.fontFamilyBtn))) {
       this.toggle((toolbarOpened) => {
         if (toolbarOpened) {
           this.isDropDownOpen = true;
