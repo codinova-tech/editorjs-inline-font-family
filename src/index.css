@@ -1,0 +1,58 @@
+.ce-inline-tool {
+    &.ce-inline-tool--font {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    
+        .button-wrapper-text {
+          &-font-family {
+            width: 80px;
+            padding-right: 5px;
+            .selected-font-family {
+              width: 80px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .selectionList {
+          &-font-family {
+            position: absolute;
+            top: 35px;
+            left: 0;
+            height: 300px;
+            overflow-y: scroll;
+    
+            .selection-list-wrapper {
+              width: 50px;
+              background: #fff;
+              border: 1px solid #eaeaea;
+    
+              &-font {
+                width: 150px;
+                background: #fff;
+                border: 1px solid #eaeaea;
+    
+                .selection-list-option {
+                  padding: 5px;
+                  border-bottom: 1px solid #eaeaea;
+                  width: 140px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+    
+                  &-active {
+                    background-color: #eff2f5;
+                  }
+                }
+    
+                .selection-list-option:hover {
+                  background-color: #eff2f5;
+                }
+              }
+            }
+          }
+        }
+    }
+}
