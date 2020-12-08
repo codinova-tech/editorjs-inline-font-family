@@ -31,6 +31,10 @@ class FontFamilyTool {
       },
     };
   }
+  constructor({api, config}) {
+    this.api = api,
+    this.config = config
+  }
    commandName= 'fontName';
 
     CSS = {
@@ -74,8 +78,8 @@ class FontFamilyTool {
     this.selectionList.setAttribute('class', 'selectionList-font-family');
     const selectionListWrapper = document.createElement('div');
     selectionListWrapper.setAttribute('class', 'selection-list-wrapper-font');
-
-    for (const value of fontFamiliesType) {
+    const FontFamilyOptions = this.config.fontFamilyList? this.config.fontFamilyList : fontFamiliesType;
+    for (const value of FontFamilyOptions) {
       const option = document.createElement('div');
       option.setAttribute('value', value);
       option.setAttribute('style', `font-family:${value}`);
