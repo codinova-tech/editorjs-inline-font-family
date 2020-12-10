@@ -21,8 +21,8 @@
             position: absolute;
             top: 35px;
             left: 0;
-            height: 300px;
-            overflow-y: scroll;
+            max-height: 300px;
+            overflow: auto;
     
             .selection-list-wrapper {
               width: 50px;
